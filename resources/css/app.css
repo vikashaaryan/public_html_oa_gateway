@@ -1,0 +1,61 @@
+/* resources/css/app.css */
+/* @import "tailwindcss";
+ */
+/* Tailwind's base, components, and utilities */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+:root {
+  --primary-50: #eef3fb;
+  --primary-100: #d9e4f5;
+  --primary-200: #b8cbeb;
+  --primary-300: #92ade0;
+  --primary-400: #6986d3;
+  --primary-500: #4f66c7;
+  --primary-600: #3e4db6;
+  --primary-700: #1E3A8A;
+  --primary-800: #192d6a;
+  --primary-900: #172858;
+
+  /* Secondary Colors */
+  --secondary-50: #fcf5f7;
+  --secondary-100: #f9ebee;
+  --secondary-200: #f3d5de;
+  --secondary-300: #e8b1c2;
+  --secondary-400: #d8819f;
+  --secondary-500: #c55c81;
+  --secondary-600: #b64066;
+  --secondary-700: #9F1239;
+  --secondary-800: #7e1635;
+  --secondary-900: #66162d;
+}
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-pagination-bullet {
+  width: 10px !important;
+  height: 10px !important;
+  background: rgba(255, 255, 255, 0.5) !important;
+  opacity: 1 !important;
+}
+.swiper-pagination-bullet-active {
+  background: #ffffff !important;
+}
+
+.h-\[400px\] {
+  height: 400px;
+}
+
+.h-275 {
+  height: 275px;
+}
+.swiper-slide1{
+background : #192C65
+}

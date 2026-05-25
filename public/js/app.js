@@ -1,0 +1,9 @@
+import './bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import './src/App'
+import '../js/jquery.min.js'
+import '../js/bootstrap.bundle.min.js'
+import '../js/default-assets/setting.js'
+import '../js/default-assets/scrool-bar.js'
+import '../js/todo-list.js'
+import '../js/default-assets/active.js'

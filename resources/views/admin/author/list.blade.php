@@ -1,0 +1,48 @@
+@extends('admin.layouts.app')
+@section('content')
+<div class="row g-4">
+    <div class="col-12">
+        <div class="card ">
+            <div class="card-body card-breadcrumb">
+                <div class="page-title-box d-flex align-items-center justify-content-between">
+                    <h4 class="mb-0">{{__('message.editor')}}</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <div class ="d-flex">
+                    <div class="w-50">
+                        <h4 class="card-title">{{__('message.editor')}}</h4>
+                    </div>
+                    <div class="w-50">
+                        <a href="{{route('author.create')}}" class="float-end no-underline">
+                            <i class="mdi mdi-library-plus" aria-hidden="true"></i> {{ __('message.add_editor')}}
+                        </a>
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-bordered dt-responsive nowrap data-table-area"  id="author_table">
+                        <thead>
+                            <tr>
+                                <th >{{__('message.name')}}</th>
+                                <th>{{__('message.status')}}</th>
+                                <th>{{__('message.action')}}</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+        </div>
+    </div>
+</div>
+@php
+$view_data = '{ data: "name" },{ data: "status" },{ data: "action" }';
+$url = get_admin_url('author_list');
+echo data_table('author_table',$view_data,$url,'');
+$url = get_admin_url('author_status');
+echo change_status(__('message.change_status'),$url);
+@endphp
+@endsection
