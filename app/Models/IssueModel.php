@@ -11,4 +11,5 @@ class IssueModel extends Model
     public function Volume(){
         return $this->belongsTo(VolumeModel::class, 'volume', 'id')->where('status', 'active');
     }
+    
 }

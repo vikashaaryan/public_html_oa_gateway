@@ -25,4 +25,5 @@ class AuthorModel extends Model
     {
         return $this->belongsTo(UniversityModel::class, 'university_id', 'id');
     }
+    
 }

@@ -11,4 +11,12 @@ class ArticleAuthorModel extends Model
     public function Article(){
         return $this->hasOne(ArticleModel::class,'id','article_id');
     }
+    public function University()
+{
+    return $this->belongsTo(
+        UniversityModel::class,
+        'university_id',
+        'id'
+    );
+}
 }

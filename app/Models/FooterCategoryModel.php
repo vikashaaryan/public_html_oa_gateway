@@ -12,4 +12,5 @@ class FooterCategoryModel extends Model
     {
         return $this->hasMany(FooterLinkModel::class, 'footer_category', 'id')->where('status','active')->orderBy('sort','asc');
     }
+    
 }

@@ -58,4 +58,5 @@ class ArticleModel extends Model
     public function Volumes(){
         return $this->hasOne(VolumeModel::class,'id','volume');
     }
+    
 }

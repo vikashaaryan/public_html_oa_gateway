@@ -11,4 +11,4 @@ class FooterLinkModel extends Model
     public function Category(){
         return $this->hasOne(FooterCategoryModel::class,'id','footer_category');
     }
-}
+} 

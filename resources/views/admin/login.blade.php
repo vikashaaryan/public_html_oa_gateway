@@ -7,7 +7,7 @@ $setting = setting();
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{$setting->title}}</title>
-    <link rel="icon" href="{{ asset($setting->logo)}}">
+    <link rel="icon" href="{{ asset($setting->logo)?? asset('img/core-img/favicon.ico') }}" type="image/x-icon">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="{{ asset('css/animate.css')}}">
     <link rel="stylesheet" href="{{ asset('style.css')}}">
